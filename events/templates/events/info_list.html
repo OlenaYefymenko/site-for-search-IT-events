@@ -1,0 +1,24 @@
+{% extends 'events/base.html' %}
+
+{% block content %}
+
+
+<div class="card">
+  <div class="card-header">
+    Information about our IT University
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">{{ info_list }}</h5>
+    <p class="card-text">
+
+	<li>{{ info_list.description }}</li>
+	<li>{{ info_list.phone }}</li>
+	<li>{{ info_list.email_address }}</li>
+
+
+
+  </p>
+  </div>
+</div>
+
+{% endblock %}
