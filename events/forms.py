@@ -3,32 +3,30 @@ from django.forms import ModelForm
 from .models import Venue, Event
 
 
-# Форма для заповнення юзера по заходам
-class EventForm(ModelForm):
+# Form for user input on events
+class EventForm(forms.ModelForm):
     class Meta:
         model = Event
-        fields = ('name', 'event_date', 'venue', 'attendees', 'description')
+        fields = ('name', 'event_date', 'venue', 'description')
         labels = {
             'name': '',
             'event_date': 'YYYY-MM-DD HH:MM:SS',
             'venue': 'Venue',
-            'attendees': 'Attendees',
             'description': '',
         }
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Event Name'}),
             'event_date': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Event Date'}),
             'venue': forms.Select(attrs={'class': 'form-select', 'placeholder': 'Venue'}),
-            'attendees': forms.SelectMultiple(attrs={'class': 'form-control', 'placeholder': 'Attendees'}),
             'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Description'}),
         }
 
 
-# Форма для заповнення юзера по місцям проведення
-class VenueForm(ModelForm):
+# Form for user input on event locations
+class VenueForm(forms.ModelForm):
     class Meta:
         model = Venue
-        fields = ('name', 'address', 'zip_code', 'phone', 'web', 'email_address',)  # 'venue_image')
+        fields = ('name', 'address', 'zip_code', 'phone', 'web', 'email_address',)
         labels = {
             'name': '',
             'address': '',
@@ -36,7 +34,6 @@ class VenueForm(ModelForm):
             'phone': '',
             'web': '',
             'email_address': '',
-            # 'venue_image': '',
         }
         widgets = {
             'name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Venue Name'}),

@@ -22,7 +22,6 @@ class Event(models.Model):
     # venue = models.CharField(max_length=120)
     manager = models.ForeignKey(User, blank=True, null=True, on_delete=models.SET_NULL)
     description = models.TextField(blank=True)
-    attendees = models.ManyToManyField('MyClubUser', blank=True)
 
 
 def __str__(self):
