@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'my_first_website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'my_it_project',
-        'USER': 'Olena',
-        'PASSWORD': 'olena',
+        'NAME': 'site-for-search-IT-events',
+        'USER': 'olena_yef',
+        'PASSWORD': 'transitiontt67',
         'HOST': '127.0.0.1',
         'PORT': '5432'
 
