@@ -1,17 +1,16 @@
-# site for searching IT events
-Сайт з пошуком IT івентів, обрані реальні назви подій за посиланням https://www.bmc.com/blogs/tech-it-conferences/
-Обрані тільки назви подій з сайту, інші дані - фейкові, сформульовані за своїм розсудом
- 
-Э 2 застосунки - members, events. Проект - my_first_website
-  
- 
-Для користувачів, які залогінилася є можливість додавати події, місця проведення IT конференцій. В майбутньому можна бути редагувати дані, якщо ти є менеджером івенту.
-  
-Для тих, хто не логінився - тільки перегляд інформації і немає інформації про запрошення на IT club University
-  
-Для написання свого першого проекту використовували ідеї Джона Елдера (посилання на його сайт http://johnelder.org/) На мій погляд, він є одним з найкращих тренірів з вивчення Python в англомовному середовище на просторах ютубу.
+This Django project is a platform for searching IT events. While the names of the events are extracted from the [source](https://www.bmc.com/blogs/tech-it-conferences/), all others accompanying are fictitious and created based on own discretion.
 
-В майбутноьму сайт буде доповнюватися, змінюватися (оновлення нових події у світі IT) та в планах дещо модифікувати інтерфейс.
+There are two applications: `members` and `events`. The project is `my_first_website`.
+
+For users who have logged in, it is possible to add events and locations of IT conferences. In the future, if you are an event manager, you will be able to edit the data.
+
+Those who have not logged in can only view information and not receive information about the invitation to the IT club at University.
+
+For the first project I used the ideas of [John Elder](http://johnelder.org/).
+
+In the future, the site will be supplemented and changed by updating new events in the IT world, and we plan to slightly modify the interface.
+
+P.S. For now, I just use this project to practice SQL queries.
   
   
   
